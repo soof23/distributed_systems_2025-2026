@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00E1F3">
+
+    <ImageButton
+        android:id="@+id/buttonHome"
+        android:layout_width="56dp"
+        android:layout_height="58dp"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="38dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Main Menu"
+        android:scaleType="centerInside"
+        android:src="@drawable/home" />
+
+    <LinearLayout
+        android:id="@+id/layoutTopBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textViewTopBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/determination"
+            android:text="0 FUN"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:layout_marginEnd="6dp" />
+
+        <ImageView
+            android:id="@+id/imageViewCoin"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:src="@drawable/coin"
+            android:contentDescription="Coin"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAddBalanceContent"
+        android:layout_width="match_parent"
+        android:layout_height="627dp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp">
+
+        <TextView
+            android:id="@+id/textViewAddBalanceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/determination"
+            android:text="Add Balance"
+            android:textColor="#ED773C"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/textViewCurrentBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/typewriter_bold"
+            android:text="Current Balance: 0 FUN"
+            android:textColor="#000000"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:id="@+id/imageViewCurrentBalanceCoin"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="Coin"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/coin" />
+
+        <LinearLayout
+            android:id="@+id/layoutAmountInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSelectAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/typewriter_bold"
+                android:text="Select Amount:"
+                android:textColor="#000000"
+                android:textSize="32sp" />
+
+            <EditText
+                android:id="@+id/editTextAmount"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/typewriter_bold"
+                android:hint="0"
+                android:inputType="numberDecimal"
+                android:textColor="#000000"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonAddBalance"
+            android:layout_width="330dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#5100C0"
+            android:fontFamily="@font/determination"
+            android:text="Add Balance"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarAddBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</FrameLayout>

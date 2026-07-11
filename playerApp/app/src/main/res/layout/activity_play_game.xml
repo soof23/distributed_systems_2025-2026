@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00D5F5" >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/layoutPlayContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingStart="35dp"
+            android:paddingEnd="35dp"
+            android:paddingTop="135dp"
+            android:paddingBottom="30dp">
+
+            <TextView
+                android:id="@+id/playGameName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Game Name"
+                android:textSize="45sp"
+                android:fontFamily="@font/determination"
+                android:textColor="#ED773C"
+                android:layout_marginBottom="15dp" />
+
+            <ImageView
+                android:id="@+id/playGameLogo"
+                android:layout_width="340dp"
+                android:layout_height="330dp"
+                android:background="#BDBDBD"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"
+                android:contentDescription="Logo" />
+
+            <LinearLayout
+                android:id="@+id/layoutGameInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="25dp" >
+
+                <TextView
+                    android:id="@+id/textViewProvider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Provider: Provider1"
+                    android:fontFamily="@font/typewriter_bold"
+                    android:textSize="25sp"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:id="@+id/layoutStars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp" />
+
+                <TextView
+                    android:id="@+id/textViewVotes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Votes: 0"
+                    android:fontFamily="@font/typewriter_bold"
+                    android:textSize="25sp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textViewMinBet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/typewriter_bold"
+                    android:text="Min Bet: 0.0 FUN"
+                    android:textSize="25sp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textViewMaxBet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/typewriter_bold"
+                    android:text="Max Bet: 0.0 FUN"
+                    android:textSize="25sp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textViewRisk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/typewriter_bold"
+                    android:text="Risk: high"
+                    android:textSize="25sp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textViewBetType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/typewriter_bold"
+                    android:text="Bet Type: $$$"
+                    android:textSize="25sp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textViewJackpot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/typewriter_bold"
+                    android:text="Jackpot: 0.0 FUN"
+                    android:textSize="25sp"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutBetSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/textViewSelectBetAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/determination"
+                    android:text="Select bet amount"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:id="@+id/layoutBetInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewBetLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/determination"
+                        android:text="Bet: "
+                        android:textColor="#000000"
+                        android:textSize="36sp" />
+
+                    <EditText
+                        android:id="@+id/editBetAmount"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/determination"
+                        android:hint="0"
+                        android:inputType="numberDecimal"
+                        android:textColor="#000000"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/buttonPlay"
+                    android:layout_width="330dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="35dp"
+                    android:backgroundTint="#5E17EB"
+                    android:fontFamily="@font/determination"
+                    android:text="Play"
+                    android:textColor="#FFFFFF"
+                    android:textSize="26sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutResultSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textPlayResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/typewriter_bold"
+                    android:text="Play Result"
+                    android:textColor="#000000"
+                    android:textSize="27sp" />
+
+                <TextView
+                    android:id="@+id/textCurrentBalancePlay"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/typewriter_bold"
+                    android:text="Current Balance: 0.0 FUN"
+                    android:textColor="#000000"
+                    android:textSize="27sp" />
+
+                <Button
+                    android:id="@+id/buttonPlayAgain"
+                    android:layout_width="330dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="25dp"
+                    android:backgroundTint="#5E17EB"
+                    android:gravity="center"
+                    android:fontFamily="@font/determination"
+                    android:text="Play Again"
+                    android:textColor="#FFFFFF"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/buttonRate"
+                    android:layout_width="330dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="25dp"
+                    android:backgroundTint="#5E17EB"
+                    android:gravity="center"
+                    android:fontFamily="@font/determination"
+                    android:text="Rate Game"
+                    android:textColor="#FFFFFF"
+                    android:textSize="26sp" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBarPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/buttonHomePlay"
+        android:layout_width="56dp"
+        android:layout_height="58dp"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="38dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Main Menu"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home" />
+
+    <LinearLayout
+        android:id="@+id/layoutTopBalancePlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textViewTopBalancePlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/determination"
+            android:text="0 FUN"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:layout_marginEnd="6dp" />
+
+        <ImageView
+            android:id="@+id/imageViewCoinPlay"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:src="@drawable/coin"
+            android:contentDescription="Coin"/>
+    </LinearLayout>
+
+</FrameLayout>

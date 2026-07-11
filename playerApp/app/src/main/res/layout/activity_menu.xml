@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00E1F3">
+
+    <LinearLayout
+        android:id="@+id/layoutBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textViewBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/determination"
+            android:text="O FUN"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="6dp" />
+
+        <ImageView
+            android:id="@+id/imageViewCoin"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:src="@drawable/coin"
+            android:contentDescription="Coin" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMainMenuContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textViewWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/determination"
+            android:text="Welcome"
+            android:textColor="#ED773C"
+            android:textSize="80sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player"
+            android:textSize="32sp"
+            android:textColor="#ED773C"
+            android:fontFamily="@font/determination"
+            android:layout_marginBottom="42dp" />
+
+        <Button
+            android:id="@+id/buttonAddBalance"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/determination"
+            android:text="Add Balance"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#5100C0"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/buttonShowGames"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/determination"
+            android:text="Available Games"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#5100C0"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/buttonSearchGames"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/determination"
+            android:text="Search"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#5100C0"
+            android:layout_marginBottom="10dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBarMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/determination"
+            android:text="Logout"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF3131"
+            android:layout_marginTop="40dp"/>
+
+</FrameLayout>

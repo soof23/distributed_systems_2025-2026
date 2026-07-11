@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00E1F3">
+
+    <ImageButton
+        android:id="@+id/buttonHomeSearch"
+        android:layout_width="56dp"
+        android:layout_height="58dp"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="38dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Main Menu"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home" />
+
+    <LinearLayout
+        android:id="@+id/layoutTopBalanceSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textViewTopBalanceSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/determination"
+            android:text="0 FUN"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:layout_marginEnd="6dp" />
+
+        <ImageView
+            android:id="@+id/imageViewCoinSearch"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:src="@drawable/coin"
+            android:contentDescription="Coin"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSearchContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="31dp"
+        android:paddingTop="120dp"
+        android:paddingEnd="31dp">
+
+        <TextView
+            android:id="@+id/textViewSearchTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/determination"
+            android:text="Search"
+            android:textColor="#ED773C"
+            android:textSize="80sp" />
+
+        <TextView
+            android:id="@+id/textViewFilters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/typewriter_bold"
+            android:text="Filters:"
+            android:textColor="#000000"
+            android:textSize="31sp" />
+
+        <LinearLayout
+            android:id="@+id/layoutStarsFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewStarsLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/typewriter_bold"
+                android:text="Stars"
+                android:textColor="#000000"
+                android:textSize="31sp" />
+
+            <Spinner
+                android:id="@+id/spinnerStars"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/typewriter_bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutRiskFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewRiskLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/typewriter_bold"
+                android:text="Risk Level"
+                android:textColor="#000000"
+                android:textSize="31sp" />
+
+            <Spinner
+                android:id="@+id/spinnerRisk"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/typewriter_bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutBetTypeFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewBetTypeLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/typewriter_bold"
+                android:text="Bet Type"
+                android:textColor="#000000"
+                android:textSize="31sp" />
+
+            <Spinner
+                android:id="@+id/spinnerBetType"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/typewriter_bold"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonSearchGames"
+            android:layout_width="330dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#5E17EB"
+            android:fontFamily="@font/determination"
+            android:text="Search"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</FrameLayout>
