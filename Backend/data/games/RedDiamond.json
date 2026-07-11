@@ -1,0 +1,11 @@
+{
+    "GameName": "RedDiamond",
+    "ProviderName": "Provider2",
+    "Stars": 3,
+    "NoOfVotes": 17,
+    "GameLogo": "data/logos/red_diamond.png",
+    "MinBet": 0.1,
+    "MaxBet": 7000.0,
+    "RiskLevel": "high",
+    "HashKey": "luck111"
+}

@@ -1,0 +1,6 @@
+# Number of workers
+nodes=3
+# Ports for each worker
+port1=5061
+port2=5062
+port3=5063

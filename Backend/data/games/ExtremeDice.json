@@ -1,0 +1,11 @@
+{
+    "GameName": "ExtremeDice",
+    "ProviderName": "Provider4",
+    "Stars": 3,
+    "NoOfVotes": 36,
+    "GameLogo": "data/logos/extreme_dice.png",
+    "MinBet": 5.0,
+    "MaxBet": 90.0,
+    "RiskLevel": "low",
+    "HashKey": "tjg257"
+}

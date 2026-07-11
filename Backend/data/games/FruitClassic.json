@@ -1,0 +1,12 @@
+{
+    "GameName": "FruitClassic",
+    "ProviderName": "Provider1",
+    "Stars": 4,
+    "NoOfVotes": 120,
+    "GameLogo": "data/logos/fruit_classic.png",
+    "MinBet": 0.1,
+    "MaxBet": 500.0,
+    "RiskLevel": "low",
+    "HashKey": "secret123"
+}
+

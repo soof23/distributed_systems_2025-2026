@@ -1,0 +1,11 @@
+{
+      "GameName": "LuckySevens",
+      "ProviderName": "LuckyGames",
+      "Stars": 5,
+      "NoOfVotes": 1250,
+      "GameLogo": "data/logos/lucky_sevens.png",
+      "MinBet": 0.1,
+      "MaxBet": 1000.0,
+      "RiskLevel": "high",
+      "HashKey": "abc123def456"
+}

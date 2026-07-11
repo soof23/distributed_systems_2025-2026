@@ -1,0 +1,11 @@
+{
+    "GameName": "Roulette",
+    "ProviderName": "Provider2",
+    "Stars": 5,
+    "NoOfVotes": 85,
+    "GameLogo": "data/logos/roulette.png",
+    "MinBet": 1.0,
+    "MaxBet": 200.0,
+    "RiskLevel": "medium",
+    "HashKey": "SecureRoulette78"
+}

@@ -1,0 +1,11 @@
+{
+    "GameName": "Mines",
+    "ProviderName": "Provider3",
+    "Stars": 2,
+    "NoOfVotes": 30,
+    "GameLogo": "data/logos/mines.png",
+    "MinBet": 5.0,
+    "MaxBet": 10000.0,
+    "RiskLevel": "high",
+    "HashKey": "awsd456"
+}
